@@ -1,4 +1,5 @@
 import prisma from '@/lib/prisma'
+import Link from 'next/link';
 
 
 export default async function Home() {
@@ -15,6 +16,7 @@ export default async function Home() {
         </li>
        )}
       </ol>
+      <Link href="/posts" className='text-blue-500 hover:text-blue-700 px-3 py-1 rounded hover:bg-blue-50 transition-colors'>View Posts</Link>
     </div>
   );
 }
